@@ -10,6 +10,10 @@ const clearButton = document.getElementById("clear-point-button");
 var point = 0;
 
 window.onload = () => {
+	if (localStorage.totalPoint == null) {
+		clearStorage();
+	}
+	
 	if (localStorage.totalPoint == "0") {
 		confettiParticle();
 	}
