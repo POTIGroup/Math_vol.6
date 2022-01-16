@@ -1,6 +1,6 @@
 gsap.to("progress", {
 	scrollTrigger: {
-		scrub: 2
+		scrub: 1
 	},
 	value: 100,
 });
